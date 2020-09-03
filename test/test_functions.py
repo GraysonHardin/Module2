@@ -1,6 +1,6 @@
 import unittest
 from main import camper_age_input
-from main.camper_age_input import convert_to_months
+from main.camper_age_input import convert_to_months, convert_to_years
 
 
 class FunctionTestCase(unittest.TestCase):
@@ -36,13 +36,22 @@ class FunctionTestCase(unittest.TestCase):
         actual = convert_to_months(user_input)
 
         self.assertEqual(expected, actual)
-    def test__convert_to_months__given_five_year_return_sixity_months(self):
+    def test__convert_to_months__given_five_year_return_sixty_months(self):
         user_input = 5
         expected = 60
 
         actual = convert_to_months(user_input)
 
         self.assertEqual(expected, actual)
+
+    def test__convert_to_years__given_twelve_months_return_one_year(self):
+        user_input = 12
+        expected = 1
+
+        actual = convert_to_years(user_input)
+
+        self.assertEqual(expected, actual)
+
 
 
 
