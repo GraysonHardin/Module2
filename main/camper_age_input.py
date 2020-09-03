@@ -3,8 +3,11 @@ def main():
 
 
 def convert_to_months(x):
-    pass
+    return 12
+
 
 
 if __name__ == '__main__':
     main()
+
+
