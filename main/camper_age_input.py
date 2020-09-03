@@ -3,7 +3,7 @@ def main():
 
 
 def convert_to_months(x):
-    return 12
+    return x * 12
 
 
 

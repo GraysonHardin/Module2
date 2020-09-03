@@ -13,5 +13,15 @@ class FunctionTestCase(unittest.TestCase):
         self.assertEqual(expected, actual)
 
 
+    def test__convert_to_months__given_two_year_return_twenty_four_months(self):
+        user_input = 2
+        expected = 24
+
+        actual = convert_to_months(user_input)
+
+        self.assertEqual(expected, actual)
+
+
+
 if __name__ == '__main__':
     unittest.main()
