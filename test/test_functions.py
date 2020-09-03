@@ -52,6 +52,18 @@ class FunctionTestCase(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test__convert_to_years__given_twenty_four_return_two_year(self):
+        user_input = 24
+        expected = 2
+
+        actual = convert_to_years(user_input)
+
+        self.assertEqual(expected, actual)
+    
+
+
+
+
 
 
 

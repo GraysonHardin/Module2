@@ -10,7 +10,7 @@ def convert_to_months(age_in_years):
     return age_in_months
 
 def convert_to_years(age_in_months):
-    return 1
+    return age_in_months / 12
 
 
 
