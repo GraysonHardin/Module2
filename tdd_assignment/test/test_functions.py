@@ -1,5 +1,5 @@
 import unittest
-from main.camper_age_input import convert_to_months, convert_to_years
+from tdd_assignment.main import convert_to_months, convert_to_years
 
 
 class FunctionTestCase(unittest.TestCase):
