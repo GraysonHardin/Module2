@@ -3,6 +3,7 @@ from main.camper_age_input import convert_to_months, convert_to_years
 
 
 class FunctionTestCase(unittest.TestCase):
+    # The first unit test validates whether the user input (1) is expected and if it is in line with the actual. The rest are the same.
     def test__convert_to_months__given_one_year_return_twelve_months(self):
         user_input = 1
         expected = 12
@@ -42,7 +43,7 @@ class FunctionTestCase(unittest.TestCase):
         actual = convert_to_months(user_input)
 
         self.assertEqual(expected, actual)
-
+    # Slightly different than the previous tests, but same concept. The test validates whether the user's inputted months matches the expected.
     def test__convert_to_years__given_twelve_months_return_one_year(self):
         user_input = 12
         expected = 1
